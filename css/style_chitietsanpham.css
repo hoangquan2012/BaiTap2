@@ -1,0 +1,17 @@
+image{
+    
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    position: relative;
+    background-color: rgb(209, 141, 141);
+    
+}
+h3{
+    color: green;
+    text-align: center;
+}
+body{
+    background-image: url(../image/headerbg.jpg);
+}
