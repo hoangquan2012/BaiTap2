@@ -1,0 +1,33 @@
+.header{
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+}
+
+body{
+    background-image: url(../image/bg_pattern.jpg);
+}
+.container{
+
+}
+
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.img:hover {
+    transform: scale(1.2);
+    
+}
+.img{
+    border-radius: 12px;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px gray;
+    background-color: #fff;
+}
+.img img{
+    width: 100%;
+    height: 225px;
+}
