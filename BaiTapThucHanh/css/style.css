@@ -11,6 +11,10 @@ body{
     padding: 50px;
 }
 
+p{
+    text-align: center;
+}
+
 .Content{
     display: flex;
     justify-content: space-around;
@@ -30,4 +34,7 @@ img{
     box-shadow: 5px 5px 5px gray;
     background-color: #fff;
     
+}
+a{
+    text-decoration: none;
 }
