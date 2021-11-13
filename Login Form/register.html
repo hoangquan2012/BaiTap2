@@ -19,10 +19,12 @@
   
   
       </div>
-      <div id="confirm"></div>
+      <div class="confirm" style="width: 400px; height: 200px; justify-content: center;background-color: aqua; text-align: center;line-height: 200px;visibility: hidden">Đăng kí thành công</div>
      <script>
          function confirmedRegister(){
-            document.getElementById("confirm").innerHTML = "Đăng kí thành công";
+            
+            document.querySelector(".container").style = "display: none";
+            document.querySelector(".confirm").style = "visibility: visible !important";
          }
      </script> 
 </body>
