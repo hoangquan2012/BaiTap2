@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Trang Đăng Kí</title>
+</head>
+<body>
+    <div class="container">
+        <p><b>Username</b></p>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <p><b>Password</b></p>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <p><b>Confirm Password</b></p>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button onclick="confirmedRegister()">Đăng Kí</button>
+  
+  
+      </div>
+      <div id="confirm"></div>
+     <script>
+         function confirmedRegister(){
+            document.getElementById("confirm").innerHTML = "Đăng kí thành công";
+         }
+     </script> 
+</body>
+</html>
