@@ -1,0 +1,173 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+body{
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/slider-2.jpg);
+  background-size: cover;
+}
+h1{
+  color: #fff;
+  
+}
+.login{
+  
+  margin: auto;
+  max-width: 400px;
+  height: 100vh;
+}
+form {
+  border: 1px solid rgba(146, 135, 187, 0.8);
+  background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  border-radius: 5px;
+  color: #fff;
+  height: 100%;
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.username , .password, .repassword{
+  position: relative;
+}
+
+.arrow{
+  position: absolute;
+  background-image: url(/img/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 22px 72px;
+    background-position: 0 -22px;
+    height: 22px;
+    right: 7px;
+    width: 11px;
+    top: 10px;
+    left: -31px;
+}
+.alert-wrong-user{
+  position: absolute;
+  padding: 10px;
+   background-color: #be4b49;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(139, 3, 0, .75), 0 1px 10px rgba(0, 0, 0, .35);
+  color: #fff;
+  top: 0px;
+  left: -308px;
+}
+.alert-wrong-password{
+      position: absolute;
+      padding: 10px;
+       background-color: #be4b49;
+      border: 0;
+      border-radius: 2px;
+      box-shadow: 0 0 0 1px rgba(139, 3, 0, .75), 0 1px 10px rgba(0, 0, 0, .35);
+      color: #fff;
+      top: 0px;
+      left: -345px;
+}
+
+.alert-wrong-password2{
+  position: absolute;
+  padding: 10px;
+   background-color: #be4b49;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(139, 3, 0, .75), 0 1px 10px rgba(0, 0, 0, .35);
+  color: #fff;
+  top: 0px;
+  left: -218px;
+}
+
+.fa-user, .fa-lock{
+  position: absolute;
+  top: 10px;
+  left: -10px
+}
+
+.fa-exclamation-circle{
+  color: #be4b49;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.fa-check-circle{
+  color: greenyellow;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.fa-eye{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+.fa-eye-slash{
+  visibility: hidden;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+input[type=checkbox]{
+  color: #ABA8AE;
+}
+
+.forgot{
+  color: #0099ff;
+}
+
+input:focus{
+  border-color: #0099ff;
+}
+.container{
+  padding: 30px;
+  display: block;
+  margin-top: 118px;
+}
+.psw{
+  float: right;
+}
+
+button{
+  width: 100%;
+    height: 4rem;    
+    margin: 5rem 0 2.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    background: #FF3366;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
+}
+button:hover {
+  opacity: 0.8;
+}
+p{
+  text-align: center;
+  color: #ABA8AE;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}

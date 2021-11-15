@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Trang Đăng Nhập</title>
+</head>
+
+<body>
+  <div>
+    <div class="login">
+
+      <form action="">
+
+        <div class="container">
+          <h1>Welcome</h1>
+          <label>
+            <div class="username">
+              <i class="fa fa-user"></i>
+              <input type="text" placeholder="User Name" id="user" required>
+            </div>
+          </label>
+
+          <label>
+            <div class="password">
+              <i class="fa fa-lock"></i>
+              <input type="password" placeholder="Password" id="psw" required>
+              <i class="fa fa-eye" id="eyes"></i>
+              <i class="fa fa-eye-slash"></i>
+            </div>
+          </label>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <span class="psw"><a href="#" class="forgot">Forgot password?</a></span>
+          <button>Login</button>
+          <p>Don't have an account?<a href="register.html"> Sign up</a></p>
+        </div>
+      </form>
+
+        
+    </div>
+  </div>
+  <script>
+    const usernameElement = document.getElementById("user");
+    const passwordElement = document.getElementById("psw");
+    function show(){
+      passwordElement.type = "text";
+      
+    }
+    function hide(){
+      passwordElement.type = "password";
+      passwordElement.style.display = "block";
+    }
+     var pwShown =0;
+    document.getElementById("eyes").addEventListener("click", function () {
+    if (pwShown == 0) {
+        pwShown = 1;
+        show();
+    } else {
+        pwShown = 0;
+        hide();
+    }
+}, false);
+
+  </script>
+</body>
+
+</html>
