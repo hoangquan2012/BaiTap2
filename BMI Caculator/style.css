@@ -18,7 +18,8 @@ body{
 }
 
 .height{
-    
+    margin-top: 13px;
+    height: 50.4px;
 }
 
 #note{
@@ -26,7 +27,7 @@ body{
 }
 
 .weight{
-    
+    margin-top: 40px;
 }
 
 .btn{
