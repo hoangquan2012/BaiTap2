@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    
+}
+
+.casio{
+    position: relative;
+    margin-left: 35%;
+}
+
+.screen{
+    position: absolute;
+    background-color:  #cfe3e4;
+    height: 119px;
+    width: 301px;
+    top: 119px;
+    left: 32px;
+    border-radius: 10px;
+    font-size: 70px;
+    text-align: right;
+}
+
+.bracket1{
+    height: 26px;
+    width: 43px;
+    position: absolute;
+    left: 136px;
+    bottom: 265px;
+    border-radius: 5px;
+    background-color: #313131;
+    color: #fff;
+    font-size: 15px;
+}
+
+.bracket2{
+    height: 26px;
+    width: 43px;
+    position: absolute;
+    left: 187px;
+    bottom: 265px;
+    border-radius: 5px;
+    background-color: #313131;
+    color: #fff;
+    font-size: 15px;
+}
+
+.square-root{
+    height: 26px;
+    width: 43px;
+    position: absolute;
+    left: 84px;
+    bottom: 353px;
+    border-radius: 5px;
+    background-color: #313131;
+    color: #fff;
+    font-size: 15px;
+}
+
+.square{
+    height: 26px;
+    width: 43px;
+    position: absolute;
+    left: 136px;
+    bottom: 353px;
+    border-radius: 5px;
+    background-color: #313131;
+    color: #fff;
+    font-size: 15px;
+}
+
+.percent{
+    height: 26px;
+    width: 43px;
+    position: absolute;
+    left: 188px;
+    bottom: 353px;
+    border-radius: 5px;
+    background-color: #313131;
+    color: #fff;
+    font-size: 15px;
+}
+
+.number0{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 32px;
+    bottom: 41px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+
+.number1{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 32px;
+    bottom: 95px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+
+.number2{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 95px;
+    bottom: 95px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+.number3{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 157px;
+    bottom: 95px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+.number4{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 32px;
+    bottom: 148px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+
+.number5{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 95px;
+    bottom: 148px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+
+.number6{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 157px;
+    bottom: 148px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+
+.number7{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 32px;
+    bottom: 201px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.number8{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 95px;
+    bottom: 201px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+
+.number9{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 157px;
+    bottom: 201px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+
+.summation{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 219px;
+    bottom: 95px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+
+.Subtraction{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 281px;
+    bottom: 95px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+    
+}
+
+.multiplication{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 219px;
+    bottom: 148px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 20px;
+}
+
+.division{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 281px;
+    bottom: 148px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+}
+
+.deleten-number{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 219px;
+    bottom: 201px;
+    border-radius: 10px;
+    background-color: #95b04e;
+    color: #fff;
+    font-size: 20px;
+}
+.reset{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 281px;
+    bottom: 201px;
+    border-radius: 10px;
+    background-color: #95b04e;
+    color: #fff;
+    font-size: 20px;
+}
+.dots{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 95px;
+    bottom: 41px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 50px;
+    line-height: 0;
+}
+
+.equal{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 281px;
+    bottom: 41px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 30px;
+    line-height: 0;
+}
+
+.oldnumber{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 219px;
+    bottom: 41px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 20px;
+    line-height: 0;
+}
+
+.x10{
+    height: 38px;
+    width: 53px;
+    position: absolute;
+    left: 157px;
+    bottom: 41px;
+    border-radius: 10px;
+    background-color: #5d5d5b;
+    color: #fff;
+    font-size: 20px;
+    line-height: 0;
+}

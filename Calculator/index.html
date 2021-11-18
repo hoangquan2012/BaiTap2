@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="casio">
+            <img src="/img/casio.jpg" alt="cal" id="calculate">
+            <div class="screen">
+                <span class="input">0</span>
+            </div>
+            <button onclick="input('(')" class="bracket1">(</button>
+            <button onclick="input(')')" class="bracket2">)</button>
+            <button onclick="input('√(')" class="square-root">√x</button>
+            <button onclick="input('<sup>2</sup>')" class="square"><span>x</span><sup>2</sup></button>
+            <button onclick="input('%')" class="percent">%</button>
+            <button onclick="input(0)" class="number0">0</button>
+            <button onclick="input(1)" class="number1">1</button>
+            <button onclick="input(2)" class="number2">2</button>
+            <button onclick="input(3)" class="number3">3</button>
+            <button onclick="input(4)" class="number4">4</button>
+            <button onclick="input(5)" class="number5">5</button>
+            <button onclick="input(6)" class="number6">6</button>
+            <button onclick="input(7)" class="number7">7</button>
+            <button onclick="input(8)" class="number8">8</button>
+            <button onclick="input(9)" class="number9">9</button>
+            <button onclick="input('+')" class="summation">+</button>
+            <button onclick="input('-')" class="Subtraction">-</button>
+            <button onclick="input('×')" class="multiplication">X</button>
+            <button onclick="input('÷')" class="division">÷</button>
+            <button onclick="del()" class="deleten-number">DEL</button>
+            <button onclick="reset()" class="reset">AC</button>
+            <button onclick="input('.')" class="dots">.</button>
+            <button onclick="equal()" class="equal">=</button>
+            <button class="oldnumber">Ans</button>
+            <button class="x10">x10<sup>x</sup></button>
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+        let screenDisplay = document.querySelector(".input");
+        function input(value) {
+            if (screenDisplay.innerHTML === "0") {
+                screenDisplay.innerHTML = "";
+    
+                if (value == "%" || value == "<sup>2</sup>" || value == ")") {
+                    value = "0";
+                }
+                if (value == "." || value == "+" || value == "-" || value == "×" || value == "÷") {
+                    value = "0" + value;
+                }
+            }
+        
+            let check = screenDisplay.innerHTML.slice(-1);
+
+            if (check == "+" || check == "-" || check == "×" || check == "÷") {
+                if (value == "%" || value == "<sup>2</sup>" || value == "÷" || value == "×" || value == "+" || value == "." || value == ")") {
+                    value = "";
+                }
+            }
+            if (check == ".") {
+                if (value == "%" || value == "<sup>2</sup>" || value == "√(" || value == "(" || value == ")" || value == "÷" || value == "×" || value == "+" || value == "." || value == "-") {
+                    value = "";
+                }
+            }
+            if (check == "%") {
+                if (value == "%" || value == "√(" || value == "(" || value == ")" || value == "÷" || value == "×" || value == "+" || value == "." || value == "-") {
+                    value = "";
+                }
+            }
+            if (check == ">" || check == ")") { 
+                if (value == "%" || value == "<sup>2</sup>" || value == "√(" || value == "(" || value == ")" || value == ".") {
+                    value = "";
+                }
+            }
+            if (check == "(") {
+                if (value == "%" || value == "<sup>2</sup>" || value == "(" || value == "×" || value == "÷" || value == ".") {
+                    value = "";
+                }
+            }
+
+            screenDisplay.innerHTML += value;
+
+
+        }
+        function del() {
+            screenDisplay.innerHTML = screenDisplay.innerHTML.slice(0, -1);
+            if (screenDisplay.innerHTML.length == 0) {
+                screenDisplay.innerHTML = "0";
+            }
+        }
+
+        function reset() {
+            screenDisplay.innerHTML = "0";
+
+        }
+
+        function equal() {
+            let result = screenDisplay.innerHTML.replaceAll("×", "*").replaceAll("÷", "/")
+            screenDisplay.innerHTML = eval(result).toFixed(2).replace(/\.?0*$/g, '');
+        }
+
+
+    </script>
+</body>
+
+</html>
