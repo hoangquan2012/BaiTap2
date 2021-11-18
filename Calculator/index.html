@@ -109,7 +109,7 @@
         }
 
         function equal() {
-            let result = screenDisplay.innerHTML.replaceAll("×", "*").replaceAll("÷", "/")
+            let result = screenDisplay.innerHTML.replaceAll("×", "*").replaceAll("÷", "/").replaceAll("√(", "Math.sqrt(").replaceAll("%", "*0.01").replaceAll("<sup>2</sup>", "**2");
             screenDisplay.innerHTML = eval(result).toFixed(2).replace(/\.?0*$/g, '');
         }
 
