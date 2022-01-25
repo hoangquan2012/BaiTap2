@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+/*-------------Header---------------*/
+
+header{
+    position: relative;
+    background-color: #000;
+    height: 80px;
+}
+
+.header img{
+    width: 70px;
+    height: 70px;
+}
+.nav-bar{
+    font-size: 20px;
+    font-weight: 700;
+    color: #C9D6DF;
+    line-height: 70px;
+    
+}
+
+.car-lines-menu{
+    display: none;
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    z-index: 99;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 300;
+    top: 75px;
+    border-radius: 5px;
+    left: 200px;
+  }
+
+.product-menu{
+    display: none;
+    position: absolute;
+    width: 345px;
+    background-color: #fff;
+    z-index: 99;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 300;
+    top: 75px;
+    border-radius: 5px;
+    left: 440px;
+}
+
+.service-menu{
+    display: none;
+    position: absolute;
+    width: 290px;
+    background-color: #fff;
+    z-index: 99;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 300;
+    top: 75px;
+    border-radius: 5px;
+    left: 700px;
+}
+
+.advise-menu{
+    display: none;
+    position: absolute;
+    width: 290px;
+    background-color: #fff;
+    z-index: 99;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 300;
+    top: 75px;
+    border-radius: 5px;
+    left: 890px;
+}
+
+.menu-item {
+    font-weight: 500;
+}
+
+li a{
+    color: #000;
+}
+
+li{
+    padding-bottom: 20px;
+}
+
+.header i{
+    color: #fff;
+    font-size: 36px;
+    text-align: end;
+}
+
+.line-nav{
+    height: 2px;
+    background-color: #C9D6DF;
+    margin-top: 4px;
+}
+
+.nav1,.nav2{
+    text-align: end;
+}
+
+.nav4{
+    text-align: start;
+}
+
+.col-lg-9 a{
+    color: #C9D6DF;
+}
+
+/*-------------------DISPLAY-----------------*/
+
+.brand {
+    font-size: 34px;
+    color: #000;
+    font-weight: 700;
+    padding-top: 32px;
+    text-transform: uppercase;
+    width: 471px;
+    letter-spacing: 0.05em;
+    line-height: 39px;
+    padding-top: 60px;
+    padding-bottom: 55px;
+}
+
+#display a{
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#display .display-item{
+    text-align: center;
+    
+}
+
+.display-item .col1{
+    border: 2px solid #c6c6c6;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+}
+
+.display-line{
+    background-color: #c6c6c6;
+    height: 2px;
+    margin-top: 13px;
+}
+
+/*-----------------------SUV---------------------*/
+
+.suvs {
+    font-size: 34px;
+    color: #000;
+    font-weight: 700;
+    padding-top: 32px;
+    text-transform: uppercase;
+    width: 471px;
+    letter-spacing: 0.05em;
+    line-height: 39px;
+    padding-top: 100px;
+    padding-bottom: 55px;
+}
+
+.glb-container{
+    position: relative;
+}
+
+.glb{
+    
+}
+
+.glb2{
+    opacity: 60%;
+    position: absolute;
+    bottom: -170px;
+    left: 480px;
+    display: none;
+}
+
+.sign-up-glb,.quick-choose-glb{
+    width: 139px;
+    height: 45px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sign-up-glb{
+    position: absolute;
+    bottom: -90px;
+    left: 678px;
+    display: none;
+}
+
+.quick-choose-glb{
+    position: absolute;
+    bottom: -90px; 
+    left: 530px;
+    display: none;
+}
