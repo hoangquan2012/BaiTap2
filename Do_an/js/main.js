@@ -1,5 +1,6 @@
-$(".nav1").click(
+//----------------HEADER---------------
+$(".fa-search").click(
     function(){
-        $(".car-lines-menu").show(2000);
+        $(".search").show();
     }
 )
