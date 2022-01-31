@@ -6,8 +6,6 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
 }
 
 img{
@@ -20,6 +18,8 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+
 /*-------------Header---------------*/
 
 
@@ -29,32 +29,7 @@ header{
 }
 
 .header{
-    background: url(../img/mercedes_car_white_198952_1920x1080.jpg); 
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 716px; 
-    background-size: 100%;
-    backface-visibility: hidden;
-    animation: slideBg 15s linear infinite 5s;
-    animation-timing-function: linear;
-}
-
-@keyframes slideBg{
-    0% {
-        background-image: url(../img/mercedes_car_white_198952_1920x1080.jpg);
-    }
-    25% {
-        background-image: url(../img/car_tailights_road_210011_1920x1080.jpg);
-    }
-    50% {
-        background-image: url(../img/mercedes_car_gray_206612_1920x1080.jpg);
-    }
-    75% {
-        background-image: url(../img/mercedesbenz_gt_r_mercedes_car_151175_1920x1080.jpg);
-    }
-    100% {
-        background-image: url(../img/mercedes_car_white_198952_1920x1080.jpg);
-    }
+    background-color: #000;
 }
 
 .header img{
@@ -210,9 +185,21 @@ header{
 }
 
 
+
+
+/*-------------HEADER-IMG--------------- */
+.header-img{
+    position: relative;
+    background: url(../img/collection/image\ 21.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 560px; 
+    background-size: 100%;
+}
+
 .brand {
-    font-size: 34px;
-    color: #fff;
+    font-size: 48px;
+    color: #000;
     font-weight: 400;
     padding-top: 28px;
 }
@@ -220,7 +207,12 @@ header{
 .describe {
     font-size : 24px;
     font-weight: 500;
-    color: #fff;
+    color: #000;
+}
+
+.text-img{
+    padding-top: 182px;
+    padding-left: 75px;
 }
 
 /*-------------MOBILE-HEADER ------------*/
@@ -256,178 +248,134 @@ header{
     background-color: #00ADEF;
 }
 
-/*-------------Description----------*/
+/*-----------------------CHIRLDREN-----------------------*/
 
-#description{
-    height: 361px;
-}
-
-#description h1{
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
-    text-transform: uppercase;
-    width: 564px;
-    height: 128px;
-    padding-top: 100px;
-    padding-left: 50px;
-}
-
-#description p{
-    font-size: 16px;
+#children .title{
     font-weight: 400;
-    line-height: 160%;
-    width: 453px;
-    height: 154px;
-    padding-top: 69px;
-    margin-left: 96px;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    padding-top: 25px;
 }
 
-#description button{
-    background-color: #00ADEF;
-    border: none;
-    width: 170px;
-    height: 51px;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    font-size: 16px;
-    margin-top: 40px;
-    margin-left: 96px;
-}
-
-/*-------------------Buy Now-----------------------*/
-/* 
-#buy-now .container{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-#buy-now button{
-    width: 137px;
-    height: 44px;
-    background-color: #00ADEF;
-    color: #000;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 179px;
-}
-
-#buy-now p{
-    font-size: 12px;
-    color: #fff;
+#children .intro{
     font-weight: 600;
-    letter-spacing: 0.085em;
-    padding-top: 192px;
-    padding-left: 73px;
+    padding-top: 15px;
+    font-size: 20px;
 }
 
-.parameter{
-    background: linear-gradient(107.95deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 250, 250, 0) 83.15%);
-    filter: drop-shadow(0px 4px 43px rgba(0, 0, 0, 0.25));
-    backdrop-filter: blur(15.4188px);
-    width: 442px;
-    height: 136px;
-} */
-
-/*---------------CAR-LINE--------------*/
-#car-line{
-    background-color: black;
+#children .title-line{
+    width: 40px;
+    border-top: 1px solid #000;
 }
 
-#car-line img{
+#children .col-lg-3 p{
+    padding-left: 12px;
+    padding-top: 40px;
+}
+
+/*-----------------------FASHION-----------------------*/
+
+#fashion .title{
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    padding-top: 35px;
+}
+
+#fashion .intro{
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+#fashion .title-line{
+    width: 40px;
+    border-top: 1px solid #000;
+}
+
+
+#fashion .sort-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: auto;
+    column-gap: 28px;
+    list-style-type: none;
+}
+
+.sort-img .img{
+    grid-column: span 2;
+    grid-row: span 2;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.sort-img .img1{
+    grid-column: span 1;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+figure{
+    overflow: hidden;
+}
+
+.sort-img{
+    overflow: hidden;
+}
+
+.sort-img img{
+    transition: all 1.3s;
+}
+.sort-img img:hover{
+    transform: scale(1.2);
+}
+
+/*-----------------------TRENDING-----------------------*/
+
+#trending .title{
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    padding-top: 35px;
+}
+
+#trending .intro{
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+#trending .title-line{
+    width: 40px;
+    border-top: 1px solid #000;
+}
+
+#trending .line-trending{
+    width: 155px;
+    border-top: 2px solid #fff;
+}
+
+#trending .trending-item{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(97, 118, 127, 0) 100%);
+    backdrop-filter: blur(4px);
+    margin-top: -35px;
+    color: #fff;
+    padding: 4px;
+    padding-left: 40px;
+}
+
+#trending .text-trending{
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+#trending picture{
     cursor: pointer;
 }
 
-#car-line .col-lg-4{
-    overflow: hidden;
-
-}
-
-#car-line h2{
-    display: inline-block;
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    font-size: 18px;
-    margin-top: -46px;
-    height: 46px;
-    padding-left: 35px;
-    line-height: 50px;
-    width: 100%;
-    z-index: 99;
-}
-
-
-
-#car-line h1{
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    width: 471px;
-    height: 78px;
-    color: #fff;
-    margin: auto;
-    letter-spacing: 0.05em;
-    padding-top: 89px;
-}
-
-#car-line h3{
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    color: #fff;
-    text-align: center;
-    margin-top: 120px;
-}
-
-#car-line .container-item{
-    padding-top: 50px;
-}
-
-#car-line .car-line-item{
-    padding-bottom: 122px;
-
-}
-
-
-/*----------------TOOL------------------*/
-
-#tool h2{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding-top: 69px;
-    padding-bottom: 30px;
-}
-
-#tool h3{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-top: 25px;
-    padding-bottom: 12px;
-}
-
-#tool p{
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    padding-bottom: 107px;
-    width: 240px;
-    height: 40px;
-    margin: auto;
-}
-
-.tag{
-    width: 257px !important;
-    height: 40px;
-}
-
-#tool .col-lg-4{
-    padding-bottom: 75px;
+.trending{
+    padding-bottom: 160px;
 }
 
 /*-----------------------FOOTER-----------------------*/
@@ -479,4 +427,3 @@ footer p{
     padding-top: 10px;
     padding-left: 20px;
 }
-

@@ -4,3 +4,11 @@ $(".fa-search").click(
         $(".search").show();
     }
 )
+//Mobile
+
+$(".navbar-toggler").click(
+    function(){
+        $(".navbar-collapse").show();
+    }
+    
+)
