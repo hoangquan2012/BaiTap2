@@ -9,11 +9,24 @@ and (max-width: 992px){
     .header-img{
         display: none;
     }
+    #fashion{
+        display: none;
+    }
+    #trending{
+        display: none;
+    }
+
 }
 
 @media only screen
 and (min-width: 992px){
     .mobile-header{
+        display: none;
+    }
+    #fashion-mobile{
+        display: none;
+    }
+    #trending-mobile{
         display: none;
     }
 }
