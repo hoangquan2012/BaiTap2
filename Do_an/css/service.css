@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*-------------Header---------------*/
+
+
+
+header{
+    position: relative;
+}
+
+.header{
+    background-color: #000;
+}
+
+.header img{
+    width: 70px;
+    height: 70px;
+}
+.nav-first{
+    font-size: 16px;
+    font-weight: 700;
+    color: #C9D6DF;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.car-lines-menu{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    color: #fff;
+    z-index: 99;
+    list-style-type: none;
+    border-radius: 5px;
+    text-align: start;
+    line-height: 40px;
+    top: 65px;
+    padding-right: 3rem;
+    transition: all 0.5s;
+  }
+
+
+.product-menu{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    z-index: 99;
+    border-radius: 5px;
+    list-style-type: none;
+    text-align: start;
+    line-height: 40px;
+    top: 65px;
+    padding-right: 2rem;
+}
+
+.service-menu{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    z-index: 99;
+    list-style-type: none;
+    border-radius: 5px;
+    text-align: start;
+    line-height: 40px;
+    top: 65px;
+    padding-right: 2rem;
+}
+
+.advise-menu{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    z-index: 99;
+    border-radius: 5px;
+    list-style-type: none;
+    text-align: start;
+    line-height: 40px;
+    top: 65px;
+    padding-right: 2rem;
+}
+
+.search{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    right: 100px;
+    top: 65px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.nav-first{
+    color: #fff;
+}
+
+.car-lines-menu a,.product-menu a, .service-menu a, .advise-menu a{
+    color: #000 !important;
+}
+
+.menu-item {
+    font-weight: 700;
+    color: #000;
+    padding-top: 10px;
+}
+
+
+.header i{
+    color: #fff;
+    font-size: 25px;
+    float: right;
+    line-height: 68px;
+    cursor: pointer;
+}
+
+.line-nav{
+    height: 2px;
+    background-color: #fff;
+    margin-top: 4px;
+}
+
+.nav1 li,.nav2 li,.nav4 li,.nav3 li{
+    list-style: none;
+}
+
+.nav1,.nav2,.nav3,.nav4 {
+    cursor: pointer;
+}
+
+.col-lg-9 .navi{
+    color: #FFF;
+    position: relative;
+}
+
+.col-lg-9 .navi:after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 15px;
+    transition: 0.3s;
+}
+
+.col-lg-9 .navi:hover:after{
+    width: 100%;
+}
+
+.nav-first:hover{
+    color: #fff;
+}
+
+.nav1:hover .car-lines-menu,.nav2:hover .product-menu,.nav3:hover .service-menu,.nav4:hover .advise-menu{
+    display: block;
+    transition: all 0.3s;
+}
+
+.nav-links:hover{
+    color: #00ADEF !important;
+}
+
+/*-------------HEADER-IMG--------------- */
+.header-img{
+    position: relative;
+    background: url(../img/service/mercedes_car_black_146054_1920x1080\ 1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 560px; 
+    background-size: 100%;
+}
+
+.brand {
+    font-size: 40px;
+    color: #000;
+    font-weight: 500;
+    padding-top: 28px;
+}
+
+.describe {
+    font-size : 24px;
+    font-weight: 500;
+    color: #000;
+}
+
+.text-img{
+    padding-top: 30px;
+    padding-left: 15px;
+}
+/*-------------MOBILE-HEADER ------------*/
+.mobile-header{
+    background-color: #000 !important;
+}
+
+.dropdown-toggle{
+    color: #fff !important;
+    font-weight: 700;
+    text-transform: capitalize !important;
+}
+
+.navbar-brand img{
+        width: 70px;
+        height: 70px
+}
+
+.navbar-brand i{
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.dropdown-menu{
+    transition: all 0.3s;
+}
+
+.btn-outline-success{
+    color: #fff;
+    background-color: #00ADEF;
+}
+
+/*-------------------------DISCOVER----------------------*/
+
+#discover .picture{
+    overflow: hidden;
+}
+
+#discover .col{
+    position: relative;
+}
+
+#discover h2{
+    padding-top: 60px ;
+    font-size: 35px;
+    text-align: center;
+}
+
+#discover .intro{
+    position: absolute;
+    top: 280px;
+    color: #FFF;
+    font-family: 'Arial','sans-serif';
+    text-transform: uppercase;
+    padding-left: 37px;
+}
+
+.intro h1{
+    font-size: 90px;
+}
+
+.intro p{
+    font-size: 18px;
+}
+
+#discover img{
+    transition: all 0.3s;
+    width: 100%;
+}
+
+#discover img:hover{
+    transform: scale(1.1);
+}
+
+
+/*-------------------------MAINTENACE PACKAGE----------------------*/
+
+#maintenance-package .title{
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    padding-top: 35px;
+}
+
+#maintenance-package .intro{
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+#maintenance-package .title-line{
+    width: 40px;
+    border-top: 1px solid #000;
+}
+
+#maintenance-package ul{
+    font-size: 16px;
+}
+
+#maintenance-package li{
+    line-height: 20px;
+    padding-top: 15px;
+}
+
+.maintenance-item{
+    display: flex;
+}
+
+.maintenance-intro{
+    padding: 20px;
+}
+
+
+/*------------------ONLINE PACKAGE---------------*/
+
+#online-package .title{
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    padding-top: 35px;
+}
+
+#online-package .intro{
+    font-weight: 600;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+#online-package .title-line{
+    width: 40px;
+    border-top: 1px solid #000;
+}
+
+#online-package img{
+    width: 100%;
+}
+
+/*-----------------DIFFERENT-SEVICE-------------------*/
+
+#different-service .title{
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    padding-top: 35px;
+}
+
+#different-service .intro{
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+#different-service .title-line{
+    width: 40px;
+    border-top: 1px solid #000;
+}
+
+#different-service video{
+    width: 100%;
+}
