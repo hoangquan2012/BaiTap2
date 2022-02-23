@@ -6,8 +6,6 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
 }
 
 img{
@@ -20,6 +18,8 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+
 /*-------------Header---------------*/
 
 
@@ -214,130 +214,4 @@ header{
 .btn-outline-success{
     color: #fff;
     background-color: #00ADEF;
-}
-
-
-/*-------------------DISPLAY-----------------*/
-
-.brand {
-    font-size: 34px;
-    color: #000;
-    font-weight: 700;
-    padding-top: 32px;
-    text-transform: uppercase;
-    width: 471px;
-    letter-spacing: 0.05em;
-    line-height: 39px;
-    padding-top: 60px;
-    padding-bottom: 55px;
-}
-
-#display a{
-    color: #000;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-#display .display-item{
-    text-align: center;
-    
-}
-
-.display-item .col1{
-    border: 2px solid #c6c6c6;
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
-}
-
-.display-line{
-    background-color: #c6c6c6;
-    height: 2px;
-    margin-top: 13px;
-}
-
-/*-----------------------SUV---------------------*/
-
-.suvs {
-    font-size: 34px;
-    color: #000;
-    font-weight: 700;
-    padding-top: 32px;
-    text-transform: uppercase;
-    width: 471px;
-    letter-spacing: 0.05em;
-    line-height: 39px;
-    padding-top: 100px;
-    padding-bottom: 55px;
-}
-
-.glb-container{
-    position: relative;
-}
-
-.glb{
-    
-}
-
-.glb2{
-    opacity: 60%;
-    position: absolute;
-    top: 95px;
-    right: -15px;
-    display: inline-block;
-    display: none;
-}
-.glb22{
-    opacity: 60%;
-    position: absolute;
-    top: 35%;
-    left: 20%;
-    display: inline-block;
-    display: none;
-}
-
-.glb222{
-    opacity: 60%;
-    position: absolute;
-    top: 23%;
-    left: 20%;
-    display: inline-block;
-    display: none;
-}
-
-
-
-.glb-link:hover .sign-up-glb,.glb-link:hover .quick-choose-glb,.glb-link:hover .glb2,.glb-link:hover .glb22,.glb-link:hover .glb222{
-    display: block;
-}
-
-.glb-link:hover .glb{
-    display: none;
-}
-
-.sign-up-glb,.quick-choose-glb{
-    width: 139px;
-    height: 45px;
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #000;
-    text-align: center;
-    line-height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.sign-up-glb{
-    position: absolute;
-    top: 62%;
-    left: 40%;
-    display: none;
-}
-
-.glc2{
-    opacity: 60%;
-    position: absolute;
-    top: 95px;
-    right: -15px;
-    display: inline-block;
-    /* display: none; */
 }

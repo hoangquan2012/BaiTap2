@@ -20,6 +20,10 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+footer a{
+    color: #fff;
+}
 /*-------------Header---------------*/
 
 
@@ -341,10 +345,12 @@ header{
 
 #car-line .col-lg-4{
     overflow: hidden;
+    position: relative;
 
 }
 
 #car-line h2{
+    position: absolute;
     display: inline-block;
     background: rgba(0,0,0,0.5);
     color: #fff;

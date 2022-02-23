@@ -6,8 +6,6 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
 }
 
 img{
@@ -20,6 +18,8 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+
 /*-------------Header---------------*/
 
 
@@ -183,6 +183,39 @@ header{
 .nav-links:hover{
     color: #00ADEF !important;
 }
+
+/*-------------HEADER-IMG--------------- */
+.header-img{
+    position: relative;
+    background: url(../img/accout/xe.jpg);
+    filter: saturate(0.5);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 277px; 
+    background-size: 100%;
+}
+
+.brand {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 28px;
+    text-align: center;
+}
+
+.describe {
+    font-size : 24px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.text-img{
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+
 /*-------------MOBILE-HEADER ------------*/
 .mobile-header{
     background-color: #000 !important;
@@ -215,129 +248,169 @@ header{
     color: #fff;
     background-color: #00ADEF;
 }
+/*------------------BODY---------------*/
 
-
-/*-------------------DISPLAY-----------------*/
-
-.brand {
-    font-size: 34px;
-    color: #000;
-    font-weight: 700;
-    padding-top: 32px;
-    text-transform: uppercase;
-    width: 471px;
-    letter-spacing: 0.05em;
-    line-height: 39px;
-    padding-top: 60px;
-    padding-bottom: 55px;
-}
-
-#display a{
-    color: #000;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-#display .display-item{
-    text-align: center;
-    
-}
-
-.display-item .col1{
-    border: 2px solid #c6c6c6;
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
-}
-
-.display-line{
-    background-color: #c6c6c6;
-    height: 2px;
-    margin-top: 13px;
-}
-
-/*-----------------------SUV---------------------*/
-
-.suvs {
-    font-size: 34px;
-    color: #000;
-    font-weight: 700;
-    padding-top: 32px;
-    text-transform: uppercase;
-    width: 471px;
-    letter-spacing: 0.05em;
-    line-height: 39px;
-    padding-top: 100px;
-    padding-bottom: 55px;
-}
-
-.glb-container{
+body > div {
+    margin: 5% auto 0;
+    max-width: 720px;
+  }
+  .tabs {
+    display: flex;
     position: relative;
-}
-
-.glb{
-    
-}
-
-.glb2{
-    opacity: 60%;
+    justify-content: space-evenly;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .tabs .line {
     position: absolute;
-    top: 95px;
-    right: -15px;
-    display: inline-block;
-    display: none;
-}
-.glb22{
-    opacity: 60%;
-    position: absolute;
-    top: 35%;
-    left: 20%;
-    display: inline-block;
-    display: none;
-}
-
-.glb222{
-    opacity: 60%;
-    position: absolute;
-    top: 23%;
-    left: 20%;
-    display: inline-block;
-    display: none;
-}
-
-
-
-.glb-link:hover .sign-up-glb,.glb-link:hover .quick-choose-glb,.glb-link:hover .glb2,.glb-link:hover .glb22,.glb-link:hover .glb222{
-    display: block;
-}
-
-.glb-link:hover .glb{
-    display: none;
-}
-
-.sign-up-glb,.quick-choose-glb{
-    width: 139px;
-    height: 45px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 15px;
+    background-color: #00ADEF;
+    transition: all 0.2s ease;
+  }
+  .tab-item {
+    min-width: 80px;
+    width: 100%;
+    padding: 16px 20px 11px 20px;
+    font-size: 20px;
+    text-align: center;
     color: #000;
     background-color: #fff;
-    border: 1px solid #000;
-    text-align: center;
-    line-height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.sign-up-glb{
-    position: absolute;
-    top: 62%;
-    left: 40%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .tab-icon {
+    font-size: 24px;
+    width: 32px;
+    position: relative;
+    top: 2px;
+  }
+  .tab-item:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+  }
+  .tab-item.active {
+    opacity: 1;
+  }
+  .tab-content {
+    padding: 28px 0;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .tab-pane {
+    color: #333;
     display: none;
+  }
+  .tab-pane.active {
+    display: block;
+  }
+  .tab-pane h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  #product .col{
+      padding: 50px;
+      
+  }
+  #product h1{
+      text-transform: uppercase;
+      font-weight: 700;
+      padding-top: 50px;
+      padding-left: 20px;
+  }
+  #product .info{
+      padding-top: 20px;
+  }
+
+
+
+  input {
+    background: #fafafa;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #ececec !important;
+    outline: none;
+    box-shadow: none;
+  }
+
+  label {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.form-group .form-control {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+    background-image: none;
+    margin: 0;
+    outline: none;
 }
 
-.glc2{
-    opacity: 60%;
-    position: absolute;
-    top: 95px;
-    right: -15px;
+.form-group {
+    margin: 0;
+    padding: 0 0 10px;
+    border: 0;
+}
+
+#customer_login{
+    padding: 20px;
+}
+
+.btn-blues{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 40px;
+    font-weight: 700;
+    font-size: 13px;
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
     display: inline-block;
-    /* display: none; */
+    padding: 10px 15px;
+    line-height: normal;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-style: normal;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-blues:hover{
+    color: #fff;
+    background-color: #00ADEF;
+    border-color: #00ADEF;
+    box-shadow: none;
+}
+
+.login--notes {
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 1.1;
+}
+
+.social-login a {
+    display: inline-block;
+    min-width: 140px;
 }
