@@ -186,7 +186,7 @@ header{
 /*-------------HEADER-IMG--------------- */
 .header-img{
     position: relative;
-    background: url(../img/sale.jpg);
+    background: url(../img/sale/top.webp);
     background-repeat: no-repeat;
     width: 100%;
     height: 560px; 
@@ -195,7 +195,7 @@ header{
 
 .brand {
     font-size: 50px;
-    color: #fff;
+    color: #000;
     font-weight: 500;
     padding-top: 105px;
 }
@@ -272,4 +272,42 @@ header{
 
 .mr-3{
     margin-right: 10px;
+}
+
+/*-------------------------MAINTENACE PACKAGE----------------------*/
+
+#sale .title{
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    padding-top: 35px;
+}
+
+#sale .intro{
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+#sale .title-line{
+    width: 40px;
+    border-top: 1px solid #000;
+}
+
+#sale ul{
+    font-size: 16px;
+}
+
+#sale li{
+    line-height: 20px;
+    padding-top: 15px;
+}
+
+.sale-item{
+    display: flex;
+}
+
+.sale-intro{
+    padding: 20px;
 }
