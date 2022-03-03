@@ -485,6 +485,9 @@ footer p{
     padding-top: 10px;
     padding-left: 20px;
 }
+footer a:hover{
+    color: #fff;
+}
 
 @media only screen and (max-width: 500px){
     #car-line h1{
