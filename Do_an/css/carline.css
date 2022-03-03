@@ -341,3 +341,58 @@ header{
     display: inline-block;
     /* display: none; */
 }
+
+
+
+@media only screen and (max-width: 992px){
+    .glb-link:hover .sign-up-glb,.glb-link:hover .quick-choose-glb,.glb-link:hover .glb2,.glb-link:hover .glb22,.glb-link:hover .glb222{
+        display: none;
+    }
+    .glb-link:hover .glb{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    #display a {
+        color: #000;
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+@media only screen and (max-width: 768px){
+    .brand{
+        font-size: 28px;
+    }
+    #display a {
+        color: #000;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+@media only screen and (max-width: 533px){
+    .brand{
+        font-size: 24px;
+    }
+    #display a {
+
+        color: #000;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+@media only screen and (max-width: 490px){
+
+    .brand{
+        width: auto;
+        font-size: 18px;
+    }
+    .suvs{
+        width: auto;
+    }
+    #display a {
+        color: #000;
+        font-size: 8px;
+        font-weight: 500;
+    }
+}
