@@ -218,15 +218,67 @@ header{
 
 /*-------------BOOKING------------*/
 
-.items{
-    justify-content: space-between;
-
-    display: flex;
+.slds-col {
+    width: 20%;
 }
 
-.list{
-    width: 50%;
+input{
+    border: 2px solid rgb(201, 201, 201);
+    outline: invert;
+    width: 230px;
     height: 40px;
+    box-shadow: var(--slds-c-input-shadow, var(--sds-c-input-shadow));
+    transition: border .1s linear,background-color .1s linear
+}
+
+.slds-grid {
+    padding-bottom: 20px;
+}
+
+.send{
+    height: 42px;
+    background-color: #00ADEF;
+    text-align: center;
+    width: 230px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#booking{
+    position: relative;
+}
+
+/*-------------CHECK------------*/
+
+#check{
+    padding-top: 100px;
+}
+
+.notification{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    height: 290px;
+    text-align: center;
+    width: 500px;
+    font-size: 30px;
+    margin: auto;
+    line-height: 288px;
+    border: solid 1px;
+    top: 200px;
+    left: 35%;
+}
+#check i{
+    color: lightgreen;
+}
+
+.fa-times{
+    color: #000 !important;
+    position: absolute;
+    right: 0;
+    font-size: 20px !important;
+    
 }
 
 /*-----------------------FOOTER-----------------------*/

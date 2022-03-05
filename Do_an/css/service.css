@@ -374,3 +374,59 @@ header{
 #different-service video{
     width: 100%;
 }
+
+/*-----------------------FOOTER-----------------------*/
+
+footer{
+    background-color: black;
+    color: #fff;
+}
+
+.footer-arrow{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+footer .container{
+    padding-top: 130px;
+}
+
+footer h2{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer p{
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.footer-line{
+    height: 2px;
+    background-color: #C9D6DF;
+    margin-top: 4px;
+}
+
+.license{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px 0px;
+}
+
+.license .footer-item{
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+.fa-facebook-square,.fa-youtube,.fa-instagram,.fa-twitter-square{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+footer a{
+    color: #fff;
+}
+footer a:hover{
+    color: #fff;
+}
