@@ -281,6 +281,7 @@ header{
     font-size: 20px;
     width: 100%;
 }
+
 /*-------------HEADER-IMG--------------- */
 .header-img{
     position: relative;
@@ -342,62 +343,26 @@ header{
     background-color: #00ADEF;
 }
 
-/*-----------------------Overal-----------------------*/
+/*-------------------------Size----------------------*/
 
-#exterior .title{
+#size .title{
     font-weight: 400;
     margin-bottom: 0px;
     padding-bottom: 2px;
     padding-top: 35px;
 }
 
-#exterior .intro{
+#size .intro{
     font-weight: 600;
     padding-top: 15px;
     font-size: 20px;
-    transition: all 0.3s ease-in-out;
 }
 
-#exterior .title-line{
+#size .title-line{
     width: 40px;
     border-top: 1px solid #fff;
 }
 
-/*-------------------------MAINTENACE PACKAGE----------------------*/
-
-#maintenance-package .title{
-    font-weight: 400;
-    margin-bottom: 0px;
-    padding-bottom: 2px;
-    padding-top: 35px;
-}
-
-#maintenance-package .intro{
-    font-weight: 600;
-    padding-top: 15px;
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
-}
-
-#maintenance-package .title-line{
-    width: 40px;
-    border-top: 1px solid #fff;
-}
-.maintenance-item{
-    display: flex;
-}
-
-.maintenance-intro{
-    padding: 50px;
-}
-
-#maintenance-package .btn{
-    width: 200px;
-    background-color: #00ADEF;
-    height: 36px;
-    color: #fff;
-    outline: none;
-}
 
 /*-------------------------Details----------------------*/
 
@@ -483,6 +448,8 @@ header{
     border-top: 1px solid #fff;
 }
 
+
+
 /*-----------------------FOOTER-----------------------*/
 
 footer{
@@ -539,30 +506,30 @@ footer a:hover{
     color: #fff;
 }
 
-@media only screen
-and (max-width: 1200px){
-    #navbar-fixed-left{
-        display: none;
-    }
-    .maintenance-item{
-        display: block;
-    }
-    .maintenance-item img{
-        
-        height: auto !important;
-    }
-}
 
 @media only screen
 and (max-width: 992px){
     #details{
         display: none;
     }
+    #details-mobile p{
+        width: 100% !important;
+    }
 }
 
 @media only screen
 and (min-width: 992px){
     #details-mobile{
+        display: none;
+    }
+}
+
+@media only screen
+and (max-width: 1200px){
+    #navbar-fixed-left{
+        display: none;
+    }
+    #navbar-fixed-top{
         display: none;
     }
 }

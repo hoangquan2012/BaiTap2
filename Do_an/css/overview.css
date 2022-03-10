@@ -281,6 +281,7 @@ header{
     font-size: 20px;
     width: 100%;
 }
+
 /*-------------HEADER-IMG--------------- */
 .header-img{
     position: relative;
@@ -344,24 +345,137 @@ header{
 
 /*-----------------------Overal-----------------------*/
 
-#exterior .title{
+#overview .title{
     font-weight: 400;
     margin-bottom: 0px;
     padding-bottom: 2px;
     padding-top: 35px;
 }
 
-#exterior .intro{
+#overview .intro{
     font-weight: 600;
     padding-top: 15px;
     font-size: 20px;
-    transition: all 0.3s ease-in-out;
 }
 
-#exterior .title-line{
+#overview .title-line{
     width: 40px;
     border-top: 1px solid #fff;
 }
+
+/*-----------------------overview-mobile-----------------------*/
+
+#overview-mobile .title{
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    padding-top: 35px;
+}
+
+#overview-mobile .intro{
+    font-weight: 600;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+#overview-mobile .title-line{
+    width: 40px;
+    border-top: 1px solid #fff;
+}
+/*-----------------------design-mobile-----------------------*/
+#design-mobile .title{
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    padding-top: 35px;
+}
+
+#design-mobile .intro{
+    font-weight: 600;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+#design-mobile .title-line{
+    width: 40px;
+    border-top: 1px solid #fff;
+}
+/*-------------------------MAINTENACE PACKAGE----------------------*/
+
+#design .title{
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    padding-top: 35px;
+}
+
+#design .intro{
+    font-weight: 600;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+#design .title-line{
+    width: 40px;
+    border-top: 1px solid #fff;
+}
+.maintenance-item{
+    display: flex;
+}
+
+.maintenance-intro{
+    padding: 50px;
+}
+
+#maintenance-package .btn{
+    width: 200px;
+    background-color: #00ADEF;
+    height: 36px;
+    color: #fff;
+    outline: none;
+}
+
+#design a{
+    position: relative;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+#design .name{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.8s ease-in-out;
+    display: none;
+}
+
+#design a img{
+    transition: all 0.8s ease-in-out;
+}
+
+
+
+#design a:hover .name{
+    bottom: 40%;
+    display: block;
+    color: #00ADEF;
+}
+
+#design a:hover img{
+    filter: grayscale();
+    transform: scale(1.2);
+}
+
+#design .details-items{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
 
 /*-------------------------MAINTENACE PACKAGE----------------------*/
 
@@ -376,7 +490,6 @@ header{
     font-weight: 600;
     padding-top: 15px;
     font-size: 20px;
-    transition: all 0.3s ease-in-out;
 }
 
 #maintenance-package .title-line{
@@ -399,89 +512,37 @@ header{
     outline: none;
 }
 
-/*-------------------------Details----------------------*/
+/*-------------------------PARAMETER----------------------*/
 
-#details .title{
+#parameter .title{
     font-weight: 400;
     margin-bottom: 0px;
     padding-bottom: 2px;
     padding-top: 35px;
 }
 
-#details .intro{
+#parameter .intro{
     font-weight: 600;
     padding-top: 15px;
     font-size: 20px;
 }
 
-#details .title-line{
+#parameter .title-line{
     width: 40px;
     border-top: 1px solid #fff;
 }
 
-#details .details-items{
-    font-size: 20px;
-    font-weight: 500;
-}
 
-#details a{
-    position: relative;
-    display: block;
-    transition: all 0.3s ease-in-out;
-}
-
-#details a img{
-    transition: all 0.3s ease-in-out;
-}
-
-#details .name{
-    position: absolute;
+#parameter .btn{
+    width: 200px;
+    background-color: #00ADEF;
+    height: 36px;
     color: #fff;
-    bottom: 0;
-    text-transform: uppercase;
-    font-weight: 700;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.8s ease-in-out;
-    display: none;
-}
-
-#details a:hover .name{
-    bottom: 40%;
-    display: block;
-    color: #00ADEF;
-}
-
-#details a:hover img{
-    filter: grayscale();
-    transform: scale(1.2);
-}
-
-#details{
-    padding-bottom: 100px;
+    outline: none;
 }
 
 
-/*-----------------------Detail-mobile-----------------------*/
 
-#details-mobile .title{
-    font-weight: 400;
-    margin-bottom: 0px;
-    padding-bottom: 2px;
-    padding-top: 35px;
-}
-
-#details-mobile .intro{
-    font-weight: 600;
-    padding-top: 15px;
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
-}
-
-#details-mobile .title-line{
-    width: 40px;
-    border-top: 1px solid #fff;
-}
 
 /*-----------------------FOOTER-----------------------*/
 
@@ -539,11 +600,38 @@ footer a:hover{
     color: #fff;
 }
 
+
 @media only screen
-and (max-width: 1200px){
-    #navbar-fixed-left{
+and (max-width: 992px){
+    #overview{
         display: none;
     }
+    #overview-mobile p{
+        width: 100% !important;
+    }
+    #design-mobile p{
+        width: 100% !important;
+    }
+    #design{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+}
+
+@media only screen
+and (min-width: 992px){
+    #overview-mobile{
+        display: none;
+    }
+    #design-mobile{
+        display: none;
+    }
+}
+
+@media only screen
+and (max-width: 1200px){
     .maintenance-item{
         display: block;
     }
@@ -551,18 +639,19 @@ and (max-width: 1200px){
         
         height: auto !important;
     }
-}
-
-@media only screen
-and (max-width: 992px){
-    #details{
-        display: none;
+    .maintenance-intro{
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
 @media only screen
-and (min-width: 992px){
-    #details-mobile{
+and (max-width: 1200px){
+    #navbar-fixed-left{
+        display: none;
+    }
+    #navbar-fixed-top{
         display: none;
     }
 }
