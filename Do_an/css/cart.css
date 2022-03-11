@@ -6,8 +6,6 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
 }
 
 img{
@@ -20,6 +18,8 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+
 /*-------------Header---------------*/
 
 
@@ -183,6 +183,7 @@ header{
 .nav-links:hover{
     color: #00ADEF !important;
 }
+
 /*-------------MOBILE-HEADER ------------*/
 .mobile-header{
     background-color: #000 !important;
@@ -216,141 +217,53 @@ header{
     background-color: #00ADEF;
 }
 
+ /*-----------------------CART-----------------------*/
 
-/*-------------------DISPLAY-----------------*/
-
-.brand {
-    font-size: 34px;
-    color: #000;
-    font-weight: 700;
-    padding-top: 32px;
-    text-transform: uppercase;
-    width: 471px;
-    letter-spacing: 0.05em;
-    line-height: 39px;
-    padding-top: 60px;
-    padding-bottom: 55px;
-}
-
-#display a{
-    color: #000;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-#display .display-item{
+.cart{
+    width: 100%;
+    margin: auto;
     text-align: center;
-    
+    padding-top: 30px;
+    display: flex;
+    padding-left: 50px;
 }
 
-.display-item .col1{
-    border: 2px solid #c6c6c6;
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
+.cart h2{
+    margin-bottom: 20px;
 }
 
-.display-line{
-    background-color: #c6c6c6;
-    height: 2px;
-    margin-top: 13px;
+.cart table{
+    width: 100%;
 }
 
-/*-----------------------SUV---------------------*/
-
-.suvs {
-    font-size: 34px;
-    color: #000;
-    font-weight: 700;
-    padding-top: 32px;
-    text-transform: uppercase;
-    width: 471px;
-    letter-spacing: 0.05em;
-    line-height: 39px;
-    padding-top: 100px;
-    padding-bottom: 55px;
-    transition: all 0.5s ease-in-out;
+.cart img{
+    margin: 0;
 }
 
-.glb-container{
-    position: relative;
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+.cart table tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
 }
 
-.glb{
-    transition: all 0.5s ease-in-out;
+.cart table thead tr th:last-child{
+    text-align: right;
+}
+.cart table tbody tr td:last-child{
+    text-align: right;
 }
 
-.glb2{
-    opacity: 60%;
-    position: absolute;
-    top: 95px;
-    right: -15px;
-    display: inline-block;
-    display: none;
-    transition: all 0.5s ease-in-out;
+.buy-now{
+    height: 40px;
+    background-color: #00ADEF;
+    color: #fff;
+    font-weight: bold;
+    line-height: 40px;
+    cursor: pointer;
 }
-.glb22{
-    opacity: 60%;
-    position: absolute;
-    top: 35%;
-    left: 20%;
-    display: inline-block;
-    display: none;
-    transition: all 0.5s ease-in-out;
-}
-
-.glb222{
-    opacity: 60%;
-    position: absolute;
-    top: 23%;
-    left: 20%;
-    display: inline-block;
-    display: none;
-    transition: all 0.5s ease-in-out;
-}
-
-
-
-.glb-link:hover .sign-up-glb,.glb-link:hover .quick-choose-glb,.glb-link:hover .glb2,.glb-link:hover .glb22,.glb-link:hover .glb222{
-    display: block;
-    transition: all 0.5s ease-in-out;
-}
-
-.glb-link:hover .glb{
-    display: none;
-    transition: all 0.5s ease-in-out;
-}
-
-.sign-up-glb,.quick-choose-glb{
-    width: 139px;
-    height: 45px;
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #000;
-    text-align: center;
-    line-height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: all 0.5s ease-in-out;
-}
-
-.sign-up-glb{
-    position: absolute;
-    top: 62%;
-    left: 40%;
-    display: none;
-    transition: all 0.5s ease-in-out;
-}
-
-.glc2{
-    opacity: 60%;
-    position: absolute;
-    top: 95px;
-    right: -15px;
-    display: inline-block;
-    /* display: none; */
-}
-
-/*-----------------------FOOTER-----------------------*/
+ /*-----------------------FOOTER-----------------------*/
 
 footer{
     background-color: black;
@@ -403,62 +316,29 @@ footer p{
 footer a{
     color: #fff;
 }
-
 footer a:hover{
     color: #fff;
 }
-
-
-
-@media only screen and (max-width: 992px){
-    .glb-link:hover .sign-up-glb,.glb-link:hover .quick-choose-glb,.glb-link:hover .glb2,.glb-link:hover .glb22,.glb-link:hover .glb222{
+  @media only screen
+and (max-width:  658px){
+    .demo {
         display: none;
     }
-    .glb-link:hover .glb{
-        display: block;
-    }
 }
 
-@media only screen and (max-width: 992px){
-    #display a {
-        color: #000;
-        font-size: 22px;
-        font-weight: 500;
-    }
+@media only screen
+and (max-width: 992px){
+  .cart{
+      display: block;
+      padding-left: 0;
+      font-size: 12px;
+  }
+  .cart .container{
+      padding-top: 30px;
+      width: 100% !important;
+  }
+  tbody td p{
+      margin-bottom: 0px !important;
+  }
 }
-@media only screen and (max-width: 768px){
-    .brand{
-        font-size: 28px;
-    }
-    #display a {
-        color: #000;
-        font-size: 15px;
-        font-weight: 500;
-    }
-}
-@media only screen and (max-width: 533px){
-    .brand{
-        font-size: 24px;
-    }
-    #display a {
 
-        color: #000;
-        font-size: 12px;
-        font-weight: 500;
-    }
-}
-@media only screen and (max-width: 490px){
-
-    .brand{
-        width: auto;
-        font-size: 18px;
-    }
-    .suvs{
-        width: auto;
-    }
-    #display a {
-        color: #000;
-        font-size: 8px;
-        font-weight: 500;
-    }
-}
