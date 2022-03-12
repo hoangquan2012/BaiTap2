@@ -228,7 +228,8 @@ input{
     width: 230px;
     height: 40px;
     box-shadow: var(--slds-c-input-shadow, var(--sds-c-input-shadow));
-    transition: border .1s linear,background-color .1s linear
+    transition: border .1s linear,background-color .1s linear;
+    padding: 10px;
 }
 
 .slds-grid {
