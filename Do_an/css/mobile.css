@@ -33,3 +33,15 @@ and (min-width: 992px){
     }
 }
 
+@media only screen
+and (max-width: 1200px){
+    #navbar-fixed-left{
+        display: none;
+    }
+    #navbar-fixed-top{
+        display: none;
+    }
+    #navbar-fixed-right{
+        display: none;
+    }
+}
