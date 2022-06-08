@@ -1,0 +1,11 @@
+img{
+    width: 60px;
+}
+
+.soluong{
+    display: flex;
+}
+
+.price{
+    border: 1px solid;
+}
