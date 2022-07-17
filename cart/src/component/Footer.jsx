@@ -1,11 +1,9 @@
 import React from "react";
 
-function Footer() {
+function Footer(props) {
     return (
         <div>
-            <a href="../index.html" className="btn btn-warning btn-md"><i className="fa fa-arrow-left"
-                        aria-hidden="true"></i>&nbsp;Quay
-                        về trang chủ</a>
+            <a className="btn btn-danger btn-md" onClick={() => props.deleteAllProduct()}>&nbsp;Xóa tất cả</a>
                     <a href="checkout.html" class="btn btn-primary btn-md"><i
                         className="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Thanh toán</a>
         </div>
