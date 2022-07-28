@@ -4,7 +4,7 @@ function Body(props) {
     return (
         <>
             <div  className={styles.background}>
-                <img src="img/Background.png"  className={styles.img}/>
+                <img src="img/maybachfullhd.jpg"  className={styles.img}/>
             </div>
         </>
     );

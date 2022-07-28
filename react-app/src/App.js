@@ -2,6 +2,8 @@ import React from "react";
 import Header from "./component/Header";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Body from "./component/Body";
+import Info from "./component/Info";
+import Carlist from "./component/Carlist";
 function App() {
   const carlines = [
     {
@@ -34,10 +36,12 @@ function App() {
   ))
 
   return (
-    <>
+    <div style={{ backgroundColor: 'black' }}>
       <Header carlist={carlist} />
       <Body />
-    </>
+      <Info />
+      <Carlist />
+    </ div>
 
   );
 }

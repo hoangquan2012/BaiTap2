@@ -1,0 +1,13 @@
+.slick-slide img {
+    margin: auto;
+  }
+.color{
+    color: #fff;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+.slick-next::before{
+    font-size: 40px;
+}
