@@ -137,7 +137,7 @@ p {
   .body {
     width: 100%;
     .body-top {
-      background: url(../img/bg.png);
+      background-image: url(../img/bg.png);
       @include d-flex(column, center, center);
       @include mobile() {
         padding: 0 0.5rem 0 0.5rem;
